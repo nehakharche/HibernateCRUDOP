@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "HibernateApplication.HibernateDemo" table = "EMPLOYEE">
+    <!-- class -->
+      
+      <id name = "studId" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "studName" column = "first_name" type = "string"/>
+      <property name = "surname" column = "last_name" type = "string"/>
+      <property name = "rollno" column = "Roll_No" type = "int"/>
+      
+   </class>
+</hibernate-mapping>
